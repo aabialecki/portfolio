@@ -1,5 +1,6 @@
 import finnhub
-finnhub_client = finnhub.Client(api_key="sandbox_c251griad3ifpcilkq00")
+api_key="PLACEHOLDER" #Replace Before Running
+finnhub_client = finnhub.Client(api_key)
 
 def quote(stock):
     f_quote = finnhub_client.quote(stock).get("c")
